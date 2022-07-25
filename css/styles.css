@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.general-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar{
+    display: flex;
+    margin: 0 0 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul{
+    display: flex;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #202124;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.navbar ul li a:hover{
+    text-decoration: underline;
+}
+
+.menu i{
+    font-size: 30px;
+    font-weight: bold;
+    color: #202124;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.menu i:hover{
+    background-color: rgba(220,220,220, .5);
+    border-radius: 50%;
+}
+
+.button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 7px 22px;
+    border-radius: 4px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #1f5dc0;
+}
+
+.button:focus{
+    outline: none;
+}
+
+.logo-section{
+    width: 100vw;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-section .logo{
+    margin: auto auto 0 auto;
+}
+
+.search-section{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.search-section input{
+    width: 650px;
+    padding: 8px 36px;
+    border-radius: 25px;
+    border: 1px solid rgba(220,220,220);
+}
+
+.search-section input:hover{
+    box-shadow: 1px 2px rgba(168,168,168, 0.4);
+}
+
+.search-section input:focus{
+    outline: none;
+}
+
+
+.form-group{
+    position: relative;
+}
+
+.form-group i{
+    position: absolute;
+    left: 14px;
+    top: 9px;
+    justify-content: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.bot-buttons{
+    margin: 0 auto;
+}
+
+.bot-buttons button{
+    margin: 30px 10px 0 10px;
+    padding: 5px 12px;
+    font-size: 14px;
+    color: #202124;
+    border-radius: 4px;
+    border: 0.5px solid rgba(168,168,168, 0.1);
+}
+
+.bot-buttons button:hover{
+    border: 0.5px solid rgba(168,168,168, 0.4);
+}
+
+.bot-buttons button:focus{
+    outline: none;
+}
+
+.search-bottom{
+    width: 100vw;
+    height: 364px;
+}
+
+.footer-section{
+    width: 100vw;
+    height: auto;
+}
+
+.country{
+    height: 48px;
+    width: 100vw;
+    display: flex;
+    border-bottom: 1px solid rgba(168,168,168, 0.6);
+}
+
+.country span{
+    display: flex;
+    margin: 0 auto 0 10px;
+    align-items: center;
+    justify-content: center;
+    color: #696969;
+    font-size: 14px;
+}
+
+.bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+.navbar-left ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar-left ul li{
+    padding: 0 10px;
+}
+
+.navbar-left a{
+    color: #696969;
+}
+
+.navbar-left a:hover{
+    color: #696969;
+    text-decoration: underline;
+}
+
+.navbar-mid{
+    position: relative;
+}
+
+.navbar-mid img{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 2px;
+    left: -20px;
+}
+
+.navbar-mid ul li{
+    list-style: none; 
+}
+
+.navbar-mid a{
+    color: #696969;
+}
+
+.navbar-mid a:hover{
+    color: #696969;
+    text-decoration: underline;
+}
+
+.navbar-right ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar-right ul li{
+    padding: 0 10px;
+    margin-right: 20px;
+}
+
+.navbar-right a{
+    color: #696969;
+}
+
+.navbar-right a:hover{
+    color: #696969;
+    text-decoration: underline;
+}
+
+/* Responsive for mobile */
+
+@media only screen and (max-width: 650px) {
+    
+    /*Search bar */
+    .search-section input{
+        width: 95%;
+    }
+
+    .search-bottom{
+        height: 235px;
+    }
+
+    /*Footer*/
+    .footer{
+        height: 150px;
+    }
+
+    .country{
+        height: 50px;
+    }
+
+    .bottom-footer{
+        height: 150px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
